@@ -2,41 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Travel Guide Design System - Inspired by wanderlust and adventure
+All colors MUST be HSL for consistency and theming.
 */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 220 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Travel-inspired primary colors - Ocean blues */
+    --primary: 210 100% 45%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 210 100% 65%;
+    --primary-dark: 210 100% 25%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm secondary colors - Sunset oranges */
+    --secondary: 25 95% 60%;
+    --secondary-foreground: 220 15% 15%;
+    --secondary-light: 25 95% 75%;
+    --secondary-dark: 25 95% 45%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Nature accents - Earthy greens */
+    --accent: 140 40% 50%;
+    --accent-foreground: 0 0% 98%;
+    --accent-light: 140 40% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Neutral grays with warmth */
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 10% 45%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 15% 88%;
+    --input: 220 15% 94%;
+    --ring: 210 100% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Travel-specific design tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(210 100% 45%) 0%, hsl(25 95% 60%) 100%);
+    --ocean-gradient: linear-gradient(180deg, hsl(210 100% 65%) 0%, hsl(210 100% 25%) 100%);
+    --sunset-gradient: linear-gradient(135deg, hsl(25 95% 75%) 0%, hsl(25 95% 45%) 100%);
+    --nature-gradient: linear-gradient(135deg, hsl(140 40% 70%) 0%, hsl(140 40% 50%) 100%);
+    
+    /* Elegant shadows */
+    --shadow-soft: 0 4px 20px hsl(220 15% 15% / 0.08);
+    --shadow-medium: 0 8px 30px hsl(220 15% 15% / 0.12);
+    --shadow-strong: 0 15px 40px hsl(220 15% 15% / 0.15);
+    
+    /* Glass effect */
+    --glass-bg: hsl(0 0% 100% / 0.25);
+    --glass-border: hsl(0 0% 100% / 0.3);
+    
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --sidebar-background: 0 0% 98%;
 
